@@ -1,3 +1,15 @@
+1 selected
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+Enable desktop notifications for Gmail.
+   OK  No, thanks
+Conversations
+29% of 15 GB used
+Terms · Privacy · Programme Policies
+Last account activity: 1 minute ago
+Currently being used in 2 other locations · Details
 <!DOCTYPE html>
 <html lang="en">
 
@@ -423,6 +435,15 @@
             background: rgba(94, 230, 208, 0.03);
         }
 
+        .project-card.featured {
+            border-color: rgba(232, 163, 61, 0.4);
+            background: rgba(232, 163, 61, 0.035);
+        }
+
+        .project-card.featured:hover {
+            border-color: rgba(232, 163, 61, 0.6);
+        }
+
         .project-top {
             display: flex;
             justify-content: space-between;
@@ -436,6 +457,19 @@
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 600;
             font-size: 1.25rem;
+        }
+
+        .new-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10.5px;
+            font-weight: 600;
+            color: var(--navy);
+            background: var(--amber);
+            border-radius: 3px;
+            padding: 2px 7px;
+            margin-left: 10px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
         }
 
         .project-date {
@@ -620,14 +654,14 @@
         <div class="terminal-line"><span class="prompt">$</span> whoami<span class="cursor"></span></div>
         <h1 class="display">Harshit Joshi<br>builds with <span class="accent">AI</span>,<br>leads in the <span
                 style="color:var(--amber)">real world.</span></h1>
-        <p class="hero-sub">B.Tech IT graduate (Class of 2026) building LLM-powered applications with <strong>LangChain,
-                LangGraph &amp; RAG</strong> — and the same person who's spent <strong>four years</strong> running
+        <p class="hero-sub">B.Tech IT graduate (Class of 2026) building LLM-powered applications and ML systems with <strong>LangChain,
+                LangGraph, RAG &amp; Scikit-learn</strong> — and the same person who's spent <strong>four years</strong> running
             college hackathons end to end, budgets included.</p>
 
         <div class="tag-row">
             <span class="tag cyan">Generative AI</span>
             <span class="tag cyan">RAG &amp; LangGraph</span>
-            <span class="tag cyan">Prompt Engineering</span>
+            <span class="tag cyan">Machine Learning</span>
             <span class="tag amber">Event Leadership</span>
             <span class="tag amber">Team Management</span>
         </div>
@@ -645,8 +679,8 @@
             <div class="about-text">
                 <p>I'm a final-year <span class="hl">B.Tech Information Technology</span> graduate from Graphic Era Hill
                     University, finishing in June 2026. Most of my recent work sits at the intersection of applied AI
-                    and shipped product — chatbots, retrieval pipelines, and agent workflows built with real APIs, not
-                    just tutorials.</p>
+                    and shipped product — chatbots, retrieval pipelines, ML models, and agent workflows built with real
+                    APIs and real data, not just tutorials.</p>
                 <p>Outside of code, I've spent the last <span class="hl2">four years organising hackathons</span> on
                     campus — which in practice meant managing budgets, running sponsorship and fund campaigns, and
                     leading teams under deadline pressure. That operational experience shapes how I build: I care as
@@ -658,8 +692,8 @@
                     <div class="stat-label">YEARS ORGANISING CAMPUS HACKATHONS</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-num">5+</div>
-                    <div class="stat-label">AI APPLICATIONS SHIPPED</div>
+                    <div class="stat-num">6+</div>
+                    <div class="stat-label">AI &amp; ML APPLICATIONS SHIPPED</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-num">2026</div>
@@ -675,7 +709,11 @@
         <div class="manifest">
             <div class="manifest-row">
                 <div class="manifest-key">ai_ml</div>
-                <div class="manifest-val">Generative AI, NLP, RAG, LangChain, LangGraph, Prompt Engineering</div>
+                <div class="manifest-val">Generative AI, Machine Learning, Deep Learning, NLP, Computer Vision, RAG, LangChain, LangGraph, Prompt Engineering</div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">data</div>
+                <div class="manifest-val">SQL, EDA, Pandas, NumPy, Scikit-learn, TensorFlow, Keras</div>
             </div>
             <div class="manifest-row">
                 <div class="manifest-key">languages</div>
@@ -683,11 +721,11 @@
             </div>
             <div class="manifest-row">
                 <div class="manifest-key">web</div>
-                <div class="manifest-val">HTML, CSS, JavaScript</div>
+                <div class="manifest-val">HTML, CSS</div>
             </div>
             <div class="manifest-row">
                 <div class="manifest-key">tools</div>
-                <div class="manifest-val">Git, VS Code, Streamlit, Groq API</div>
+                <div class="manifest-val">Git, GitHub, VS Code, Streamlit, Groq API</div>
             </div>
             <div class="manifest-row">
                 <div class="manifest-key">security</div>
@@ -708,6 +746,27 @@
     <section id="projects" class="wrap reveal">
         <div class="sec-head"><span class="sec-num">03</span><span class="sec-title display">Projects</span><span
                 class="sec-rule"></span></div>
+
+        <div class="project-card featured">
+            <div class="project-top">
+                <div class="project-title">Business Intelligence Model — Machine Learning<span class="new-badge">NEW</span></div>
+                <div class="project-date">2025 — 2026</div>
+            </div>
+            <p class="project-desc">Built a Vendor Invoice Intelligence System that predicts freight costs and flags
+                high-risk invoices, tackling invoice cost leakage and audit risk. Engineered invoice-level features in
+                SQL across vendor, purchase, and inventory tables, ran EDA and statistical testing (T-Tests), then
+                trained regression models for freight cost prediction and classification models for risk flagging —
+                evaluated on MAE, RMSE, R², Precision, Recall, and F1-Score. Deployed as .pkl models inside a Streamlit
+                app delivering real-time insights and alerts.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">SQL</span>
+                <span class="stack-pill">Scikit-learn</span>
+                <span class="stack-pill">Pandas</span>
+                <span class="stack-pill">EDA</span>
+                <span class="stack-pill">Streamlit</span>
+            </div>
+        </div>
 
         <div class="project-card">
             <div class="project-top">
@@ -736,6 +795,21 @@
                 <span class="stack-pill">RAG</span>
                 <span class="stack-pill">LangGraph</span>
                 <span class="stack-pill">LLM APIs</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">Cat vs. Dog Image Classification (CNN)</div>
+                <div class="project-date">2024</div>
+            </div>
+            <p class="project-desc">Built and trained a CNN for binary image classification; applied preprocessing and
+                data augmentation to boost accuracy.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">TensorFlow</span>
+                <span class="stack-pill">Keras</span>
+                <span class="stack-pill">Computer Vision</span>
             </div>
         </div>
 
@@ -789,7 +863,6 @@
             <div class="stack-row">
                 <span class="stack-pill">HTML</span>
                 <span class="stack-pill">CSS</span>
-                <span class="stack-pill">JavaScript</span>
             </div>
         </div>
     </section>
@@ -854,3 +927,5 @@
 </body>
 
 </html>
+index.html
+Displaying index.html.
