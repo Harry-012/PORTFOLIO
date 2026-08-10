@@ -705,4 +705,247 @@
                 </div>
                 <div class="stat-block">
                     <div class="stat-num">2026</div>
-                    <div class
+                    <div class="stat-label">B.TECH (IT) GRADUATE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="wrap reveal">
+        <div class="sec-head"><span class="sec-num">02</span><span class="sec-title display">Skills</span><span
+                class="sec-rule"></span></div>
+        <div class="manifest">
+            <div class="manifest-row">
+                <div class="manifest-key">ai_ml</div>
+                <div class="manifest-val">Python, NumPy, Pandas, Scikit-learn, TensorFlow, Keras, CatBoost, CNN,
+                    Neural Networks, Deep Learning, Computer Vision, NLP, Predictive Modeling, Time Series
+                    Forecasting</div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">genai_llm</div>
+                <div class="manifest-val">LangChain, LangGraph, Retrieval-Augmented Generation (RAG), Agentic AI /
+                    Multi-Agent Workflows, Prompt Engineering, Groq API, Azure API, LLM Application Development</div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">backend_api</div>
+                <div class="manifest-val">FastAPI, REST API Design, Pydantic, CORS Configuration, Uvicorn</div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">data_deploy</div>
+                <div class="manifest-val">SQL, Azure, EDA, Feature Engineering, Model Evaluation, Model Monitoring
+                    &amp; Drift Detection, Streamlit, Git, GitHub, Render (Cloud Deployment), CI/CD Basics, VS Code
+                </div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">languages</div>
+                <div class="manifest-val">Python, Java, C++, C</div>
+            </div>
+            <div class="manifest-row">
+                <div class="manifest-key">other</div>
+                <div class="manifest-val">Cybersecurity Fundamentals</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="wrap reveal">
+        <div class="sec-head"><span class="sec-num">03</span><span class="sec-title display">Projects</span><span
+                class="sec-rule"></span></div>
+
+        <div class="project-card featured">
+            <div class="project-top">
+                <div class="project-title">E-Commerce Sales Forecasting Platform <span class="new-badge">END-TO-END
+                        ML</span></div>
+                <div class="project-date">Production-style system</div>
+            </div>
+            <p class="project-desc">A production-style demand forecasting pipeline for e-commerce inventory
+                planning, processing 540K+ transaction records into daily per-product forecasts.</p>
+            <ul class="project-list">
+                <li>Modular pipeline with time-series feature engineering (lag/rolling-window features, seasonality
+                    flags), split into independent, testable Python modules.</li>
+                <li>Trained a CatBoost regression model with chronological train/test splitting to prevent data
+                    leakage — a 32% reduction in mean absolute error vs. a naive baseline.</li>
+                <li>FastAPI REST backend with prediction, product-history, and health-check endpoints, plus a
+                    custom-styled Streamlit dashboard for non-technical users.</li>
+                <li>Lightweight model monitoring with prediction logging and automated drift detection.</li>
+                <li>Deployed API + dashboard as independent services on Render via GitHub-integrated CI/CD; automated
+                    tests (pytest) for the data pipeline.</li>
+            </ul>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">CatBoost</span>
+                <span class="stack-pill">FastAPI</span>
+                <span class="stack-pill">Streamlit</span>
+                <span class="stack-pill">Render</span>
+                <span class="stack-pill">CI/CD</span>
+            </div>
+            <div style="margin-top:18px;">
+                <a href="https://ecommerce-sales-forecast-1.onrender.com" target="_blank" rel="noopener"
+                    class="btn btn-ghost" style="padding:9px 18px; font-size:12.5px;">Live Demo →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">Vendor-Freight Cost Intelligence System</div>
+                <div class="project-date">ML + SQL</div>
+            </div>
+            <p class="project-desc">Predicts freight costs and flags high-risk invoices to address invoice cost
+                leakage and audit risk.</p>
+            <ul class="project-list">
+                <li>Engineered invoice-level features with SQL from vendor, purchase, and inventory tables; ran EDA
+                    and statistical testing (T-Tests) to uncover cost and risk patterns.</li>
+                <li>Trained regression models for freight cost prediction and classification models for invoice risk
+                    flagging, evaluated on MAE, RMSE, R², Precision, Recall, and F1-Score.</li>
+                <li>Deployed as .pkl models inside a Streamlit app delivering real-time insights and alerts.</li>
+            </ul>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">SQL</span>
+                <span class="stack-pill">Scikit-learn</span>
+                <span class="stack-pill">Pandas</span>
+                <span class="stack-pill">Streamlit</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">RAG &amp; LangGraph Multi-Agent Applications</div>
+                <div class="project-date">GenAI</div>
+            </div>
+            <p class="project-desc">Context-aware Q&amp;A systems built on RAG and multi-step agent workflows with
+                LangGraph.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">LangChain</span>
+                <span class="stack-pill">LangGraph</span>
+                <span class="stack-pill">RAG</span>
+                <span class="stack-pill">Azure</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">LLM-Powered Conversational Chatbots</div>
+                <div class="project-date">GenAI</div>
+            </div>
+            <p class="project-desc">Conversational AI applications built with LangChain and the Groq LLM API, with
+                response accuracy improved through prompt engineering.</p>
+            <div class="stack-row">
+                <span class="stack-pill">LangChain</span>
+                <span class="stack-pill">Streamlit</span>
+                <span class="stack-pill">Groq API</span>
+                <span class="stack-pill">Prompt Engineering</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">Image Classification System (CNN)</div>
+                <div class="project-date">Deep Learning</div>
+            </div>
+            <p class="project-desc">A Convolutional Neural Network for image classification, with preprocessing and
+                data augmentation to boost accuracy.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">TensorFlow</span>
+                <span class="stack-pill">Keras</span>
+                <span class="stack-pill">Computer Vision</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">Generative AI Text Application</div>
+                <div class="project-date">GenAI</div>
+            </div>
+            <p class="project-desc">A demo application exploring prompt engineering and generative text with LLM
+                APIs, showcasing responsible AI use.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">LLM APIs</span>
+                <span class="stack-pill">Prompt Engineering</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-title">AI Voice Assistant</div>
+                <div class="project-date">Applied AI</div>
+            </div>
+            <p class="project-desc">A voice assistant for reminders, queries, and automated system tasks.</p>
+            <div class="stack-row">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">SpeechRecognition</span>
+                <span class="stack-pill">pyttsx3</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="wrap reveal">
+        <div class="sec-head"><span class="sec-num">04</span><span class="sec-title display">Leadership</span><span
+                class="sec-rule"></span></div>
+        <div class="lead-card">
+            <div class="lead-top">
+                <div class="lead-title">Hackathon Organiser &amp; Event Lead</div>
+                <div class="lead-date">Graphic Era Hill University · 4 years</div>
+            </div>
+            <ul class="lead-list">
+                <li>Led organisation of university hackathons for 4 consecutive years — logistics, judging,
+                    sponsorship, and participant experience.</li>
+                <li>Managed budgets, fund collection, and cross-functional student teams across concurrent campus
+                    events.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="wrap reveal">
+        <div class="sec-head"><span class="sec-num">05</span><span class="sec-title display">Education</span><span
+                class="sec-rule"></span></div>
+        <div class="edu-row">
+            <div>
+                <div class="edu-title">B.Tech — Information Technology</div>
+                <div class="edu-sub">Graphic Era Hill University, Bhimtal, Uttarakhand</div>
+                <div class="edu-sub" style="margin-top:6px;">Relevant coursework: AI, Machine Learning, Deep
+                    Learning, Generative AI &amp; Prompt Engineering, DSA</div>
+            </div>
+            <div class="edu-date">Graduated June 2026</div>
+        </div>
+    </section>
+
+    <section id="contact" class="wrap reveal contact-section">
+        <div class="sec-head"><span class="sec-num">06</span><span class="sec-title display">Contact</span><span
+                class="sec-rule"></span></div>
+        <div class="contact-big">Let's build something with <span class="accent">AI</span> — or talk hackathon
+            logistics.</div>
+        <div class="hero-actions">
+            <a href="mailto:harshit1503joshi@gmail.com" class="btn btn-primary">harshit1503joshi@gmail.com</a>
+            <a href="tel:+916399104266" class="btn btn-ghost">+91 63991 04266</a>
+        </div>
+        <div class="contact-links mono" style="color:var(--slate); font-size:14px;">
+            Haldwani, Uttarakhand, India
+        </div>
+    </section>
+
+    <footer class="wrap">
+        <div class="footer-inner">
+            <span>© 2026 Harshit Joshi</span>
+            <span>Built with HTML/CSS · Deployed via Flask</span>
+        </div>
+    </footer>
+
+    <script>
+        const revealEls = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => io.observe(el));
+    </script>
+
+</body>
+
+</html>
