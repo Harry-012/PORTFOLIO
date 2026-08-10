@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Joshi — AI Developer &amp; Builder</title>
+    <title>Harshit Joshi — AI/ML Engineer &amp; GenAI Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
@@ -66,7 +66,6 @@
             font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* ---------- Layout shells ---------- */
         .wrap {
             max-width: 1040px;
             margin: 0 auto;
@@ -82,7 +81,6 @@
             border-bottom: none;
         }
 
-        /* ---------- Nav ---------- */
         nav {
             position: fixed;
             top: 0;
@@ -139,7 +137,6 @@
             }
         }
 
-        /* ---------- Hero ---------- */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -207,7 +204,7 @@
         .hero-sub {
             font-size: clamp(1rem, 1.6vw, 1.25rem);
             color: var(--slate);
-            max-width: 560px;
+            max-width: 580px;
             margin-bottom: 36px;
         }
 
@@ -285,7 +282,6 @@
             outline-offset: 3px;
         }
 
-        /* ---------- Section headers ---------- */
         .sec-head {
             display: flex;
             align-items: baseline;
@@ -311,7 +307,6 @@
             background: var(--line);
         }
 
-        /* ---------- About / Summary ---------- */
         .about-grid {
             display: grid;
             grid-template-columns: 1.3fr 1fr;
@@ -363,7 +358,6 @@
             margin-top: 6px;
         }
 
-        /* ---------- Skills (manifest style) ---------- */
         .manifest {
             font-family: 'JetBrains Mono', monospace;
             font-size: 14px;
@@ -406,7 +400,6 @@
             }
         }
 
-        /* ---------- Projects ---------- */
         .project-card {
             border: 1px solid var(--line);
             border-radius: 8px;
@@ -475,6 +468,29 @@
             max-width: 680px;
         }
 
+        .project-list {
+            list-style: none;
+            color: #D7DCE4;
+            font-size: 0.93rem;
+            margin-bottom: 16px;
+            max-width: 700px;
+        }
+
+        .project-list li {
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 7px;
+        }
+
+        .project-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--cyan);
+            font-size: 12px;
+            top: 1px;
+        }
+
         .stack-row {
             display: flex;
             flex-wrap: wrap;
@@ -491,7 +507,6 @@
             border: 1px solid rgba(94, 230, 208, 0.18);
         }
 
-        /* ---------- Leadership ---------- */
         .lead-card {
             border: 1px solid var(--line);
             border-left: 3px solid var(--amber);
@@ -542,7 +557,6 @@
             top: 1px;
         }
 
-        /* ---------- Education ---------- */
         .edu-row {
             display: flex;
             justify-content: space-between;
@@ -569,7 +583,6 @@
             color: var(--cyan);
         }
 
-        /* ---------- Contact / Footer ---------- */
         .contact-section {
             text-align: left;
         }
@@ -609,7 +622,6 @@
             color: var(--slate);
         }
 
-        /* fade-in on scroll */
         .reveal {
             opacity: 0;
             transform: translateY(18px);
@@ -633,6 +645,7 @@
                 <a href="#skills">skills</a>
                 <a href="#projects">projects</a>
                 <a href="#leadership">leadership</a>
+                <a href="#education">education</a>
                 <a href="#contact">contact</a>
             </div>
         </div>
@@ -642,14 +655,15 @@
         <div class="terminal-line"><span class="prompt">$</span> whoami<span class="cursor"></span></div>
         <h1 class="display">Harshit Joshi<br>builds with <span class="accent">AI</span>,<br>leads in the <span
                 style="color:var(--amber)">real world.</span></h1>
-        <p class="hero-sub">B.Tech IT graduate (Class of 2026) building LLM-powered applications and ML systems with <strong>LangChain,
-                LangGraph, RAG &amp; Scikit-learn</strong> — and the same person who's spent <strong>four years</strong> running
-            college hackathons end to end, budgets included.</p>
+        <p class="hero-sub">B.Tech IT graduate (Class of 2026) building LLM-powered applications and ML systems with
+            <strong>LangChain, LangGraph, RAG &amp; the Groq API</strong> — and the same person who's spent
+            <strong>four years</strong> running college hackathons end to end, budgets included.</p>
 
         <div class="tag-row">
             <span class="tag cyan">Generative AI</span>
             <span class="tag cyan">RAG &amp; LangGraph</span>
             <span class="tag cyan">Machine Learning</span>
+            <span class="tag cyan">Computer Vision</span>
             <span class="tag amber">Event Leadership</span>
             <span class="tag amber">Team Management</span>
         </div>
@@ -665,14 +679,20 @@
                 class="sec-rule"></span></div>
         <div class="about-grid">
             <div class="about-text">
-                <p>I'm a final-year <span class="hl">B.Tech Information Technology</span> graduate from Graphic Era Hill
-                    University, finishing in June 2026. Most of my recent work sits at the intersection of applied AI
-                    and shipped product — chatbots, retrieval pipelines, ML models, and agent workflows built with real
-                    APIs and real data, not just tutorials.</p>
+                <p>I'm a <span class="hl">B.Tech Information Technology</span> graduate from Graphic Era Hill
+                    University (June 2026), specializing in Machine Learning, Deep Learning, Computer Vision, and
+                    Generative AI. Most of my recent work sits at the intersection of applied AI and shipped
+                    product — chatbots, retrieval pipelines, ML models, and agent workflows built with real APIs and
+                    real data, not just tutorials.</p>
+                <p>I design and deploy LLM applications using LangChain, LangGraph, RAG, and the Groq API, with a
+                    strong grounding in prompt engineering, model evaluation, and end-to-end deployment via Streamlit
+                    and FastAPI. I'm equally comfortable building production-style ML pipelines — from data cleaning
+                    and feature engineering through model training, REST API development, cloud deployment, and
+                    post-deployment monitoring.</p>
                 <p>Outside of code, I've spent the last <span class="hl2">four years organising hackathons</span> on
-                    campus — which in practice meant managing budgets, running sponsorship and fund campaigns, and
-                    leading teams under deadline pressure. That operational experience shapes how I build: I care as
-                    much about whether something actually works for users as whether it's technically interesting.</p>
+                    campus — logistics, judging, sponsorship, budgets, and fund collection across concurrent
+                    campus events. That operational experience shapes how I build: I care as much about whether
+                    something actually works for users as whether it's technically interesting.</p>
             </div>
             <div>
                 <div class="stat-block">
@@ -680,240 +700,9 @@
                     <div class="stat-label">YEARS ORGANISING CAMPUS HACKATHONS</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-num">6+</div>
-                    <div class="stat-label">AI &amp; ML APPLICATIONS SHIPPED</div>
+                    <div class="stat-num">7</div>
+                    <div class="stat-label">AI &amp; ML PROJECTS SHIPPED</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-num">2026</div>
-                    <div class="stat-label">B.TECH (IT) GRADUATE</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="wrap reveal">
-        <div class="sec-head"><span class="sec-num">02</span><span class="sec-title display">Skills</span><span
-                class="sec-rule"></span></div>
-        <div class="manifest">
-            <div class="manifest-row">
-                <div class="manifest-key">ai_ml</div>
-                <div class="manifest-val">Generative AI, Machine Learning, Deep Learning, NLP, Computer Vision, RAG, LangChain, LangGraph, Prompt Engineering</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">data</div>
-                <div class="manifest-val">SQL, EDA, Pandas, NumPy, Scikit-learn, TensorFlow, Keras</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">languages</div>
-                <div class="manifest-val">C, C++, Java, Python</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">web</div>
-                <div class="manifest-val">HTML, CSS</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">tools</div>
-                <div class="manifest-val">Git, GitHub, VS Code, Streamlit, Groq API</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">security</div>
-                <div class="manifest-val">Cybersecurity fundamentals</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">leadership</div>
-                <div class="manifest-val">Event planning, budget &amp; fund management, campaign coordination, team
-                    leadership, administrative operations</div>
-            </div>
-            <div class="manifest-row">
-                <div class="manifest-key">spoken</div>
-                <div class="manifest-val">English (Professional), Hindi (Native)</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="wrap reveal">
-        <div class="sec-head"><span class="sec-num">03</span><span class="sec-title display">Projects</span><span
-                class="sec-rule"></span></div>
-
-        <div class="project-card featured">
-            <div class="project-top">
-                <div class="project-title">Business Intelligence Model — Machine Learning<span class="new-badge">NEW</span></div>
-                <div class="project-date">2025 — 2026</div>
-            </div>
-            <p class="project-desc">Built a Vendor Invoice Intelligence System that predicts freight costs and flags
-                high-risk invoices, tackling invoice cost leakage and audit risk. Engineered invoice-level features in
-                SQL across vendor, purchase, and inventory tables, ran EDA and statistical testing (T-Tests), then
-                trained regression models for freight cost prediction and classification models for risk flagging —
-                evaluated on MAE, RMSE, R², Precision, Recall, and F1-Score. Deployed as .pkl models inside a Streamlit
-                app delivering real-time insights and alerts.</p>
-            <div class="stack-row">
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">SQL</span>
-                <span class="stack-pill">Scikit-learn</span>
-                <span class="stack-pill">Pandas</span>
-                <span class="stack-pill">EDA</span>
-                <span class="stack-pill">Streamlit</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">LLM-Powered Chatbots</div>
-                <div class="project-date">2025 — 2026</div>
-            </div>
-            <p class="project-desc">Designed and deployed 2–3 conversational chatbots using LangChain and the Groq LLM
-                API, with Streamlit front ends. Applied prompt engineering techniques to improve response accuracy and
-                reliability.</p>
-            <div class="stack-row">
-                <span class="stack-pill">LangChain</span>
-                <span class="stack-pill">Groq API</span>
-                <span class="stack-pill">Streamlit</span>
-                <span class="stack-pill">Python</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">RAG &amp; LangGraph AI Applications</div>
-                <div class="project-date">2025 — 2026</div>
-            </div>
-            <p class="project-desc">Built Retrieval-Augmented Generation applications for context-aware question
-                answering, plus multi-step agent workflows using LangGraph for complex task orchestration.</p>
-            <div class="stack-row">
-                <span class="stack-pill">RAG</span>
-                <span class="stack-pill">LangGraph</span>
-                <span class="stack-pill">LLM APIs</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">Cat vs. Dog Image Classification (CNN)</div>
-                <div class="project-date">2024</div>
-            </div>
-            <p class="project-desc">Built and trained a CNN for binary image classification; applied preprocessing and
-                data augmentation to boost accuracy.</p>
-            <div class="stack-row">
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">TensorFlow</span>
-                <span class="stack-pill">Keras</span>
-                <span class="stack-pill">Computer Vision</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">Generative AI Application</div>
-                <div class="project-date">2024</div>
-            </div>
-            <p class="project-desc">Explored prompt engineering and text generation using LLM APIs; built a small
-                application demonstrating generative capabilities and responsible AI use.</p>
-            <div class="stack-row">
-                <span class="stack-pill">LLM APIs</span>
-                <span class="stack-pill">Prompt Engineering</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">AI Voice Assistant</div>
-                <div class="project-date">2023</div>
-            </div>
-            <p class="project-desc">Python-based voice assistant using SpeechRecognition and pyttsx3, capable of
-                answering queries, setting reminders, and performing system tasks.</p>
-            <div class="stack-row">
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">SpeechRecognition</span>
-                <span class="stack-pill">pyttsx3</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">Management System</div>
-                <div class="project-date">2023</div>
-            </div>
-            <p class="project-desc">Database-backed record-management system in Python with full CRUD operations and
-                structured file-based data storage.</p>
-            <div class="stack-row">
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">CRUD</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-title">E-Commerce Shopping Site</div>
-                <div class="project-date">2023</div>
-            </div>
-            <p class="project-desc">Responsive shopping website with product listings, shopping cart, and a full
-                checkout workflow.</p>
-            <div class="stack-row">
-                <span class="stack-pill">HTML</span>
-                <span class="stack-pill">CSS</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="leadership" class="wrap reveal">
-        <div class="sec-head"><span class="sec-num">04</span><span class="sec-title display">Leadership &amp;
-                Events</span><span class="sec-rule"></span></div>
-        <div class="lead-card">
-            <div class="lead-top">
-                <div class="lead-title">Hackathon Organiser &amp; Event Lead</div>
-                <div class="lead-date">2022 — 2026 · Graphic Era Hill University</div>
-            </div>
-            <ul class="lead-list">
-                <li>Led organisation of college hackathons for four consecutive years — logistics, judging, and
-                    participant experience for large student teams.</li>
-                <li>Planned campus commercial events including sponsorship outreach, fund collection, and promotional
-                    campaigns.</li>
-                <li>Managed budgets and administrative coordination across multiple concurrent events.</li>
-                <li>Built and led cross-functional student teams, strengthening leadership and stakeholder
-                    communication.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="wrap reveal">
-        <div class="sec-head"><span class="sec-num">05</span><span class="sec-title display">Education</span><span
-                class="sec-rule"></span></div>
-        <div class="edu-row">
-            <div>
-                <div class="edu-title">Bachelor of Technology — Information Technology</div>
-                <div class="edu-sub">Graphic Era Hill University, Bhimtal, Uttarakhand</div>
-            </div>
-            <div class="edu-date">Sep 2022 — Jun 2026</div>
-        </div>
-    </section>
-
-    <section id="contact" class="wrap contact-section reveal">
-        <div class="sec-head"><span class="sec-num">06</span><span class="sec-title display">Contact</span><span
-                class="sec-rule"></span></div>
-        <div class="contact-big">Open to AI / software roles — <span class="accent">let's talk.</span></div>
-        <div class="contact-links">
-            <a href="mailto:harshit1503joshi@gmail.com" class="btn btn-primary">harshit1503joshi@gmail.com</a>
-            <a href="tel:+916399104266" class="btn btn-ghost">+91 63991 04266</a>
-        </div>
-    </section>
-
-    <footer class="wrap">
-        <div class="footer-inner">
-            <span>Haldwani, Nainital, Uttarakhand, India</span>
-            <span>© 2026 Harshit Joshi</span>
-        </div>
-    </footer>
-
-    <script>
-        const reveals = document.querySelectorAll('.reveal');
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-        }, { threshold: 0.12 });
-        reveals.forEach(el => io.observe(el));
-    </script>
-
-</body>
-
-</html>
-index.html
-Displaying index.html.
+                    <div class
